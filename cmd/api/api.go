@@ -22,6 +22,8 @@ func (a *application) mount() *fiber.App {
 	})
 
 	app.Get("/", homePage)
+	app.Post("/", handleSettings)
+
 	app.Get("/login", getLogin)
 	app.Post("/login", handleLogin)
 

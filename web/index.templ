@@ -25,25 +25,25 @@ templ Home() {
                 <form
                       action=""
                       class="flex flex-col justify-center items-center gap-5 py-5"
-                      hx-post="/login"
+                      hx-post="/"
                       hx-target="#feedback"
                       hx-indicator="#indicator"
                     >
                     <label class="input input-bordered flex items-center gap-2 w-full">
-                      Amount
+                      URLs Per Hour:
                       <input type="text" class="grow" name="amount" placeholder="5" />
                     </label>
                     <div class="flex flex-col">
                       <div class="form-control w-52">
                         <label class="label cursor-pointer">
-                          <span class="label-text">Remember me</span>
-                          <input type="checkbox" class="toggle toggle-primary" checked="checked" />
+                          <span class="label-text">Search On</span>
+                          <input type="checkbox" class="toggle toggle-primary" name="searchOn" checked="checked" />
                         </label>
                       </div>
                       <div class="form-control w-52">
                         <label class="label cursor-pointer">
-                          <span class="label-text">Remember me</span>
-                          <input type="checkbox" class="toggle toggle-secondary" checked="checked" />
+                          <span class="label-text">Add New URL</span>
+                          <input type="checkbox" class="toggle toggle-secondary" name="addNew" checked="checked" />
                         </label>
                       </div>
                     </div>
